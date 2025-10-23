@@ -1,0 +1,203 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Login / Register Pages ===== */
+.auth-page {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 250px;
+}
+
+.auth-page h2 {
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+.auth-page input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.auth-page input:focus {
+  border-color: #3498db;
+}
+
+.auth-page button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.auth-page button:hover {
+  background-color: #2980b9;
+}
+
+.auth-page a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.auth-page a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Logout Bar (Top) ===== */
+.logout-bar {
+  width: 100vw;               /* full viewport width */
+  background-color: #add8e6;  /* light blue */
+  padding: 12px 24px;
+  display: flex;
+  justify-content: flex-end;  /* push button to right */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+
+.logout-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b;
+}
+
+/* ===== To-Do List Page ===== */
+.todo-container {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: flex-start; /* stay toward top */
+  background-color: #f0f2f5;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 1px; /* creates gap from top below logout bar */
+}
+
+
+/* To-Do list box */
+.app-container {
+  width: 400px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Input section */
+.input-group {
+  display: flex;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 6px 0 0 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.input-group button {
+  padding: 8px 14px;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 6px 6px 0;
+}
+
+.input-group button:hover {
+  background-color: #2980b9;
+}
+
+/* Task list styling */
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  align-items: center;
+}
+
+li.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+li button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #c0392b;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 768px) {
+  .auth-page {
+    width: 90%;
+    right: 5%;
+  }
+
+  .app-container {
+    width: 90%;
+  }
+}
