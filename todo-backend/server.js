@@ -21,7 +21,7 @@ const db = mysql.createConnection({
   // ssl: { rejectUnauthorized: true }
 });
 
-db.connect(
+
 
 db.connect((err) => {
   if (err) console.log("❌ DB Connection Failed:", err);
