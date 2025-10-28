@@ -10,8 +10,11 @@ export default function TodoList() {
   const userId = localStorage.getItem("userId");
 
   useEffect(() => {
-    if (!userId) navigate("/");
-    else fetchTasks();
+    if (!userId) {
+      navigate("/"); // redirect if not logged in
+    } else {
+      fetchTasks();
+    }
   }, []);
 
   const fetchTasks = async () => {
@@ -19,7 +22,7 @@ export default function TodoList() {
       const res = await axios.get(`${API_URL}/tasks/${userId}`);
       setTasks(res.data);
     } catch (err) {
-      console.error("Error fetching tasks", err);
+      console.error("Error fetching tasks:", err);
     }
   };
 
@@ -30,25 +33,27 @@ export default function TodoList() {
       setTasks([...tasks, res.data]);
       setInput("");
     } catch (err) {
-      console.error("Error adding task", err);
+      console.error("Error adding task:", err);
     }
   };
 
   const toggleTask = async (task) => {
     try {
-      await axios.put(`${API_URL}/tasks/${task.id}`, { completed: !task.completed });
+      await axios.put(`${BASE_URL}/tasks/${task.id}`, {
+        completed: !task.completed,
+      });
       fetchTasks();
     } catch (err) {
-      console.error("Error toggling task", err);
+      console.error("Error toggling task:", err);
     }
   };
 
   const deleteTask = async (taskId) => {
     try {
-      await axios.delete(`${API_URL}/tasks/${taskId}`);
+      await axios.delete(`${BASE_URL}/tasks/${taskId}`);
       fetchTasks();
     } catch (err) {
-      console.error("Error deleting task", err);
+      console.error("Error deleting task:", err);
     }
   };
 
@@ -65,7 +70,11 @@ export default function TodoList() {
       <div className="app-container">
         <h1>📝 To-Do List</h1>
         <div className="input-group">
-          <input value={input} onChange={(e) => setInput(e.target.value)} placeholder="Add a task" />
+          <input
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
+            placeholder="Add a task"
+          />
           <button className="add-btn" onClick={addTask}>Add</button>
         </div>
         <ul>
