@@ -27,10 +27,25 @@ export default function Register() {
   return (
     <div className="auth-page">
       <h2>Register</h2>
-      <input placeholder="Username" onChange={(e) => setUsername(e.target.value)} />
-      <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-      <button onClick={handleRegister}>Register</button>
-      <p>Already have an account? <a href="/">Login</a></p>
+  
+      <form onSubmit={handleRegister}>
+        <input
+          placeholder="Username"
+          onChange={(e) => setUsername(e.target.value)}
+        />
+  
+        <input
+          type="password"
+          placeholder="Password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+  
+        <button type="submit">Register</button>
+      </form>
+  
+      <p>
+        Already have an account? <a href="/">Login</a>
+      </p>
     </div>
   );
 }
