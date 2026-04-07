@@ -1,29 +1,69 @@
-TodoList App
+# Todo App
 
-Full-stack application built with:
+A full-stack task management application built with modern web technologies.
 
-React (Frontend)
-Node.js + Express (Backend)
-MySQL (Database)
-Installation
+## 🛠️ Tech Stack
 
-Backend
+- **Frontend**: React.js
+- **Backend**: Node.js + Express
+- **Database**: MySQL
+- **Server**: json-server (for development)
 
-cd todo-backend npm install node server.js
+## 📦 Installation
 
-FrontendA
+### Backend Setup
 
-cd todo-frontend npm run dev
+```bash
+cd todo-backend
+npm install
+node server.js
+```
 
-Environment Variables
+### Frontend Setup
 
-Create a .env file in todog-backend:
+```bash
+cd todo-frontend
+npm run dev
+```
 
-PORT=5000 DB_HOST=localhost DB_USER=root DB_PASSWORD=******** DB_NAME=todo_app
+## ⚙️ Environment Variables
 
-Backend runs on http://localhost:5000
-Frontend runs on5 http://localhost:4200 todo-backend % json-server --watch db.json --port 5000 Endpoints: http://localhost:5000/locations
-<img width="304" height="345" alt="Screenshot 2026-04-07 at 1 18 45 PM" src="https://github.com/user-attachments/assets/39acc929-b411-4439-92d6-8e35f4819599" />
-<img width="308" height="345" alt="Screenshot 2026-04-07 at 1 25 00 PM" src="https://github.com/user-attachments/assets/5287caf6-56b7-436c-a216-40ccad57dbd7" />
-<img width="1460" height="681" alt="Screenshot 2026-04-07 at 1 25 47 PM" src="https://github.com/user-attachments/assets/1ece44e7-bb31-4337-a47f-d9d0df02aae5" />
+Create a `.env` file in the `todo-backend` directory:
 
+```
+PORT=5000
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=your_password_here
+DB_NAME=todo_app
+```
+
+## 🚀 Running the Application
+
+- **Backend**: Runs on `http://localhost:5000`
+- **Frontend**: Runs on `http://localhost:4200`
+
+### API Endpoints
+
+```
+http://localhost:5000/locations
+```
+
+## 📸 Screenshots
+
+### Dashboard
+<img width="304" height="345" alt="Screenshot 2026-04-07 at 1 18 45 PM" src="https://github.com/user-attachments/assets/39acc929-b411-4439-92d6-8e35f4819599" />
+
+### Tasks View
+<img width="308" height="345" alt="Screenshot 2026-04-07 at 1 25 00 PM" src="https://github.com/user-attachments/assets/5287caf6-56b7-436c-a216-40ccad57dbd7" />
+
+### Application Interface
+<img width="1460" height="681" alt="Screenshot 2026-04-07 at 1 25 47 PM" src="https://github.com/user-attachments/assets/1ece44e7-bb31-4337-a47f-d9d0df02aae5" />
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 👤 Author
+
+**PournimaJ**
