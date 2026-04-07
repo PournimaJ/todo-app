@@ -62,8 +62,9 @@ http://localhost:5000/locations
 
 ## 📝 License
 
-This project is open source and available under the MIT License.
+This project is open source.
 
 ## 👤 Author
 
 **PournimaJ**
+Front End dev under construction.
