@@ -4,7 +4,7 @@ A full-stack task management application built with modern web technologies. Org
 
 ## 🛠️ Tech Stack
 
-- **Frontend**: React.js + Vite
+- **Frontend**: React.js 
 - **Backend**: Node.js + Express
 - **Database**: MySQL
 - **Development Server**: json-server
