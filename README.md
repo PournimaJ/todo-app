@@ -66,5 +66,5 @@ This project is open source.
 
 ## 👤 Author
 
-**PournimaJ**
+**Pournima Jathade**
 Front End dev under construction.
