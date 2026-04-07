@@ -60,6 +60,8 @@ http://localhost:5000/locations
 ### Application Interface
 <img width="1460" height="681" alt="Screenshot 2026-04-07 at 1 25 47 PM" src="https://github.com/user-attachments/assets/1ece44e7-bb31-4337-a47f-d9d0df02aae5" />
 
+<img width="1450" height="667" alt="Screenshot 2026-04-07 at 4 01 26 PM" src="https://github.com/user-attachments/assets/ef381d44-19c7-44cd-a8df-28a04dd969e0" />
+
 ## 📝 License
 
 This project is open source.
