@@ -1,9 +1,11 @@
+import dotenv from "dotenv";
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import mysql from "mysql2/promise";
 import bcrypt from "bcryptjs";
 
+dotenv.config();
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
